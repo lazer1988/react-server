@@ -4,11 +4,11 @@ import fs from 'fs';
 import React from 'react';
 import express from 'express';
 import ReactDOMServer from 'react-dom/server';
-import { StaticRouter } from 'react-router'
+import { StaticRouter } from 'react-router-dom';
 
 import App from '../src/App';
 
-const PORT = process.env.PORT || 3006;
+const PORT = 3030;
 const app = express();
 
 app.use(express.static('./build'));
